@@ -1,0 +1,14 @@
+{
+  "name": "foodmap",
+  "version": "0.0.1",
+  "description": "Foodmap version final",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "foodmap"
+  ],
+  "author": "Camila Ramírez Ponce",
+  "license": "ISC"
+}
