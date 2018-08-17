@@ -219,24 +219,24 @@
 		"longitud" : "-70.5780461"
 	},
 	{
-		"name": "Eladio",
+		"name": "Rubaiyat Chile",
 		"category": "Churrasquería",
-		"address": "Avenida Nueva Providencia 2250/5, Santiago",
+		"address": "Nueva Costanera 4031, Vitacura",
 		"city": "Santiago",
 		"region": "Metropolitana",
 		"phone" : "+56 2 2231 4224",
-		"urlPhoto": "https://static.wixstatic.com/media/f721c2_08f69408d4ed4b70bedaaed3269eb553~mv2.jpg",
+		"urlPhoto": "https://media-cdn.tripadvisor.com/media/photo-s/0e/dc/a5/d3/rubaiyat-chile.jpg",
 		"latitud" : "-33.4217538",
 		"longitud" : "-70.60857379999999"
 	},
 	{
-		"name": "Fuente Las Mechadas - Sangucheria Chilena",
+		"name": "Carnal Prime Steakhouse",
 		"category": " Churrasquería",
-		"address": "Mujica 0380 Ñuñoa, Barrio Italia",
+		"address": "Alonso de Cordova 3053, Santiago 7630355",
 		"city": "Santiago",
 		"region": "Metropolitana",
-		"phone" : "+56 9 4225 4718",
-		"urlPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8R5Mm9kLOf_Vtrw99MJuwYZd2V9nYNF2MqC7X-YQWO7YssgmO",
+		"phone" : "+56 9 4017 4476",
+		"urlPhoto": "http://cde.elcomercio.pe/66/ima/0/0/3/6/6/366969.jpg",
 		"latitud" : "-33.449768",
 		"longitud" : "-70.62545399999999"
 	},
