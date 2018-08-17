@@ -152,10 +152,3 @@ function initAutocomplete() {
 
 
 
-// Funcion para busqueda por input con api de restaurantes.
-function onSearch(){
-
-}
-
-
-//key api zomato c7ca6ecef7e99e1d644aa2d5fab920d0

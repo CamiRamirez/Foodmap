@@ -12,18 +12,32 @@
 }
 /* Pantalla de inicio */
 #title1{
-  color: #CB212D;
+  color: #FE2E2E;
   text-align: center;
   margin-top: 15% ;
   font-size: 5em;
   font-family: 'Leckerli One', cursive;
 }
 #loading{
-  margin-top: -12em;
   text-align: center;
-  width: 3em;
+  width: 12em;
+}
+#loading2{
+  width: 0.8em;
+  padding-bottom: 0.3em;
+}
+#contLogo{
+  text-align: center;
 }
 
+
+@media (max-width: 575px) {
+  #title1{
+    font-size: 3.5em;
+    margin-top:40%;
+    text-align: center;
+  }
+}
 
 /*Pantalla principal de app*/
 #pantallaApp{
@@ -33,21 +47,18 @@
 
 /*Titulo de pagina*/
 #title2{
-  color: #CB212D;
+  color: #FE2E2E;
   text-align: center;
   font-family: 'Leckerli One', cursive;
   font-size: 3.5em;
   margin-top: 1em;
-  /* text-shadow:
-   -1px -1px 0 rgb(179, 122, 122),  
-    1px -1px 0 rgb(179, 122, 122),
-   -1px 1px 0 gainsboro,
-    1px 1px 0 gainsboro; */
 }
+
 #subtitle{
   color:sandybrown;
   text-align: center;
   margin: 1em;
+  font-weight: 300;
 }
 
 /*Input de busqueda*/
@@ -59,7 +70,7 @@
 
 #map{
   width:60vw; 
-  height: 50vw;
+  height: 35vw;
   margin-top:0.8em;
   border-radius: 10px;
 }
@@ -76,9 +87,9 @@
   font-family: Roboto;
   font-size: 15px;
   font-weight: 300;
-  width: 60%;
+  width: 63%;
   height: 3em;
-  margin-left: 20%;
+  margin-left: 18.5%;
   margin-top: 2%;
   border-radius: 8px;
   border: none;
@@ -86,6 +97,20 @@
 .fa-search{
   color: sandybrown;
   margin-left: 2px;
+}
+
+/*input de busqueda por nombre*/
+.input-group{
+  width: 60%;
+  margin-left: 20%;
+}
+
+#title3{
+  text-align: center;
+  margin: 1em;
+  color: sandybrown;
+  font-weight: 300;
+  font-size: 2em;
 }
 
 
