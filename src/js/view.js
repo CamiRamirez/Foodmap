@@ -1,154 +1,34 @@
 //Esconde la pantalla de inicio a los 2 segundos y muestra el resto de la App
-setTimeout(function hide() { $('#pantallaInicial').hide('fast');
-document.getElementById('pantallaApp').style.display = 'block'; }, 3500);
+setTimeout(function hide() {
+  $('#pantallaInicial').hide('fast');
+  document.getElementById('pantallaApp').style.display = 'block';
+}, 3500);
 
 
-//MAP de google
-var map;
-var service;
-var infowindow;
-
-function initMap() {
-    var city = { lat: -33.4569, lng: -70.648 };
-    var marker = new google.maps.Marker({ position: city, map: map });
-    map = new google.maps.Map(document.getElementById('map'), {
-        center: { lat: -33.4569, lng: -70.648 },
-        zoom: 15 //cercanía de imagen al mapa, así se alcanzan a ver calles y nombres.
-       
+//MUESTRA RESULTADOS DE LA BUSQUEDA EN INPUT
+function searchNames(){
+  const search = document.getElementById("searchName").value;
+  const show = document.getElementById("showRestaurantes");
+  const filteredUsers = filterUsers(local, search);
+  const filteredCategories = filterCategory(local, search);
+  show.innerHTML = "";
+  if(search != ""){
+    filteredUsers.forEach(rest => {
+      show.innerHTML += `<p id="parrafoNombres"><a onclick="modal('${rest.name}','${rest.category}','${rest.address}','${rest.city}','${rest.region}','${rest.phone}','${rest.urlPhoto}')" data-toggle="modal" data-target="#centralModalDanger">${rest.name}</a></p>`;
     });
-    infoWindow = new google.maps.InfoWindow;
-    
-    var input = document.getElementById('pac-input');
-    var searchBox = new google.maps.places.SearchBox(input);
-   
-
-    // Muestra los resultados en la vista actual del mapa
-    map.addListener('bounds_changed', function() {
-      searchBox.setBounds(map.getBounds());
+    filteredCategories.forEach(rest => {
+      show.innerHTML += `<p id="parrafoNombres"><a onclick="modal('${rest.name}','${rest.category}','${rest.address}','${rest.city}','${rest.region}','${rest.phone}','${rest.urlPhoto}')" data-toggle="modal" data-target="#centralModalDanger">${rest.name}</a></p>`;
     });
-
-    var markers = [];
-    // Listen for the event fired when the user selects a prediction and retrieve
-    // detalles de cada lugar
-    searchBox.addListener('places_changed', function() {
-      var places = searchBox.getPlaces();
-
-      if (places.length == 0) {
-        return;
-      }
-
-      // Clear out the old markers.
-      markers.forEach(function(marker) {
-        marker.setMap(null);
-      });
-      markers = [];
-
-      // Se obtiene el icono, el nombre y la ubicacion para cada lugar
-      var bounds = new google.maps.LatLngBounds();
-      places.forEach(function(place) {
-        if (!place.geometry) {
-          console.log("Returned place contains no geometry");
-          return;
-        }
-        var icon = {
-          url: place.icon,
-          size: new google.maps.Size(71, 71),
-          origin: new google.maps.Point(0, 0),
-          anchor: new google.maps.Point(17, 34),
-          scaledSize: new google.maps.Size(25, 25)
-        };
-
-        // Se crear el marcador para cada lugar
-        markers.push(new google.maps.Marker({
-          map: map,
-          icon: icon,
-          title: place.name,
-          position: place.geometry.location
-        }));
-
-        if (place.geometry.viewport) {
-          
-          bounds.union(place.geometry.viewport);
-        } else {
-          bounds.extend(place.geometry.location);
-        }
-      });
-      map.fitBounds(bounds);
-    });
-
-    // GEOLOCALIZACION
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function (position) {
-            var pos = {
-                lat: position.coords.latitude,
-                lng: position.coords.longitude
-            };
-
-            infoWindow.setPosition(pos);
-            infoWindow.setContent('Location found.');
-            infoWindow.open(map);
-            map.setCenter(pos);
-        }, function () {
-            handleLocationError(true, infoWindow, map.getCenter());
-        });
-    } else {
-        // ensaje de que el navegador no soporta la geolocalizacion
-        handleLocationError(false, infoWindow, map.getCenter());
-    }
-}
-
-function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-    infoWindow.setPosition(pos);
-    infoWindow.setContent(browserHasGeolocation ?
-        'Error: The Geolocation service failed.' :
-        'Error: Your browser doesn\'t support geolocation.');
-    infoWindow.open(map);
-}
-
-
-function initialize() {
-  var pyrmont = new google.maps.LatLng(-33.4569,-70.648);
-  map = new google.maps.Map(document.getElementById('map'), {
-      center: pyrmont,
-      zoom: 15
-      
-    });
-
-  var request = {
-    location: pyrmont,
-    radius: '500',
-    type: ['restaurant', 'restoran']
-  };
-
-  service = new google.maps.places.PlacesService(map);
-  service.nearbySearch(request, callback);
-
-}
-
-
-
-function callback(results, status) {
-  if (status == google.maps.places.PlacesServiceStatus.OK) {
-    for (let i = 0; i < results.length; i++) {
-      const place = results[i];
-      createMarker(results[i]);
-    }
-  }
-}
-
-
-function initAutocomplete() {
-    var map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: -33.8688, lng: 151.2195},
-      zoom: 13,
-      mapTypeId: 'roadmap'
-    });
-    // Create the search box and link it to the UI element.
-    
   }
 
+}
 
-
+//MODAL CON LA INFORMACION
+function modal(name, category, address, city, region, phone, photo){
+  document.getElementById('searchName').value="";
+  let contenedorRestaurante = document.getElementById('showRestaurantes');
+  contenedorRestaurante.innerHTML = " <div class='modal fade' id='centralModalDanger' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'><div class='modal-dialog modal-notify modal-danger' role='document'><div class='modal-content justify-content-center'><div class='modal-header'><h5 id='exampleModalLabel'>" + name + "</h5><button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div><div class='modal-body text-center'><img src='" + photo + "' width='250'><p class='infoModal mt-4'><b>Categoría: </b>" + category + "</p><p class='infoModal'> <b>Ciudad: </b>" + city + "</p><p class='infoModal'><b>Region: </b>" + region + "</p><p class='infoModal mt-4'><b>Dirección: </b>" + address + "</p></div><div class='modal-footer justify-content-center'><a type='button' class='btn btn-danger' id='btnDang'>Llamar<i class='fas fa-phone'></i></i></a><a type='button' id='btnClose' class='btn btn-outline-danger waves-effect' data-dismiss='modal'>Cerrar</a></div></div></div></div>";
+}
 
 
 

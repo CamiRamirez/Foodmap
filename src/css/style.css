@@ -6,6 +6,10 @@
   height:100vh;
 }
 
+#pantallaInicial{
+  transition: all 5s ease;
+
+}
 .container-fluid{
   width: 100%;
 }
@@ -14,9 +18,7 @@
   padding: 0;
   width: 100%;
 }
-#pantallaInicial{
-  transition: all 1s ease;
-}
+
 /* Pantalla de inicio */
 #title1{
   color: #FE2E2E;
@@ -49,8 +51,7 @@
 /*Pantalla principal de app*/
 #pantallaApp{
   display: none;
-  transition: all 1s ease;
-  
+
 }
 
 /*Titulo de pagina*/
@@ -70,15 +71,10 @@
 }
 
 /*Input de busqueda*/
-#searchBox{
-  width: 15em;
-  position: center;
-}
-
 
 #map{
-  width:60vw; 
-  height: 35vw;
+  width:66vw; 
+  height: 30vw;
   margin-top:0.8em;
   border-radius: 10px;
 }
@@ -90,27 +86,21 @@
 
 /*Input de busqueda en mapa*/
 
-#pac-input{
-  background-color: #fff;
-  font-family: Roboto;
-  font-size: 15px;
-  font-weight: 300;
-  width: 63%;
-  height: 3em;
-  margin-left: 18.5%;
-  margin-top: 2%;
-  border-radius: 8px;
-  border: none;
-}
 .fa-search{
   color: sandybrown;
   margin-left: 2px;
 }
 
 /*input de busqueda por nombre*/
+
 .input-group{
   width: 60%;
   margin-left: 20%;
+}
+#btnSearchMaps{
+  background-color: #FE2E2E;
+  border: 1px solid #FE2E2E;
+  height: 2.5em;
 }
 
 #title3{
@@ -118,10 +108,70 @@
   margin: 1em;
   color: sandybrown;
   font-weight: 300;
-  font-size: 2em;
+  font-size: 1.8em;
+}
+#btnSearch{
+  background-color: #FE2E2E;
+  border: 1px solid #FE2E2E;
+}
+.modal-header{
+  background-color: #FE2E2E; 
+  color: white;
+  text-align: center;
 }
 
+#showRestaurantes{
+  background-color: #fff;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: -0.8em;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#parrafoNombres{
+  margin: 0.8em;
+  cursor: pointer;
+  font-weight: 500;
+}
+@media (max-width: 575px) {
+  .input-group{
+    width: 80%;
+    margin-left: 10%;
+  }
+}
 
+#title4{
+  text-align: center;
+  margin-bottom: 2em;
+  margin-top: -1em;
+  color: white;
+  font-weight: 200;
+  font-size: 1em;
+}
+.fa-phone{
+color: white;
+}
+#btnDang{
+  background-color: #FE2E2E;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
 
+#btnClose:hover{
+color: white;
+background-color: #FE2E2E;
+}
 
+#title5{
+  color: #FE2E2E;
+  text-align: center;
+  margin-top: 15% ;
+  font-size: 1em;
+  font-family: 'Leckerli One', cursive;
+}
 
+#loading3{
+  width: 1em;
+  padding-bottom: 0.3em;
+}

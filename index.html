@@ -49,29 +49,48 @@
       <!-- Mapa de geolocalizacion -->
       <div class="row">
         <div class="col-sm-12 mapArea">
-          <input id="pac-input" class="controls" type="text" placeholder=" Buscador de restaurantes...">
-          <i class="fa fa-search" aria-hidden="true"></i>
+          <div class="input-group mb-3">
+            <input type="text" id="pac-input" class="controls form-control" placeholder=" Buscador de restaurantes en google maps...">
+            <div class="input-group-append">
+              <button id="btnSearchMaps" class="btn btn-warning" type="button">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
           <div class="col-sm-12 col-centrada" id="map"></div>
         </div>
       </div>
 
+      
 
       <!-- Input de busqueda por nombre o por categoría -->
 
-      <h1 id="title3">Comida cerca de tí</h1>
+      <h1 id="title3">Información sobre locales</h1>
+      <h5 id="title4">Puedes buscar por nombre o categoría</h5>
       <div class="input-group mb-3">
-        <input type="text" id="searchBox" class="form-control" onkeyup="" placeholder="Filtrar Restaurantes por nombre...">
+        <input type="text" id="searchName" class="form-control" onkeyup="searchNames()" placeholder="Filtrar Restaurantes por nombre...">
         <div class="input-group-append">
           <button id="btnSearch" class="btn btn-warning" type="button">
             <i class="fas fa-search"></i>
           </button>
         </div>
-
       </div>
+      <div id="showRestaurantes"></div>
+
+
+      <!-- cierre de página -->
+      <div class="col-sm-12 col-centrada">
+        <h1 id="title5">Foodmap
+          <img src="src/img/gifood.gif" id="loading3">
+        </h1>
+      </div>
+
     </div>
     <!-- termina seccion pantalla principal -->
   </div>
   <!-- termino de contenedor -->
+
+
 
   <!-- Links de bootstrap y JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -86,6 +105,8 @@
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjPMjpujN1vZd_zG5GH3WXyPVt-vJBmJA&libraries=places&callback=initMap">
   </script>
 
+  <script src="src/js/map.js"></script>
+  <script src="src/js/data.js"></script>
   <script src="src/js/view.js"></script>
 
 
