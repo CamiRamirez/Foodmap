@@ -11,13 +11,13 @@
 		"longitud" : "-70.55491569999998"
 	},
 	{
-		"name": "Lorenza Bistró",
+		"name": "Ocean Pacific's",
 		"category": "Mariscos",
-		"address": "Alonso de Córdova 3854",
+		"address": "Avenida Ricardo Cumming 221, Santiago",
 		"city": "Santiago",
 		"region": "Metropolitana",
-		"phone" : "+56 9 3071 0719",
-		"urlPhoto": "http://fudis.cl/wp-content/uploads/2018/01/lorenza.jpg",
+		"phone" : "+56 9 6831 0750",
+		"urlPhoto": "https://www.oceanpacifics.cl/wp-content/uploads/2017/11/MENU2-400x400-e1529587601493.jpg",
 		"latitud" : "-33.4023519",
 		"longitud" : "-70.59210389999998"
 	},
@@ -66,13 +66,13 @@
 		"longitud" : "-70.5782494"
 	},
 	{
-		"name": "Aquí está Coco",
+		"name": "Margo",
 		"category": "Mariscos",
-		"address": "La Concepción 236, Santiago",
+		"address": "Manquehue Ote 2030 | Local 12, Lo Barnechea",
 		"city": "Santiago",
 		"region": "Metropolitana",
-		"phone" : "+56 2 2410 6200",
-		"urlPhoto": "http://www.aquiestacoco.cl/media/2016/img/logo.jpg",
+		"phone" : "+56 2 2244 5902",
+		"urlPhoto": "http://www.lwyr.cl/wp-content/uploads/2013/12/Margo.png",
 		"latitud" : "-33.4241222",
 		"longitud" : "-70.61659989999998"
 	},
