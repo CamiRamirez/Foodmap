@@ -1,0 +1,179 @@
+#body{
+  background-color: #242322;
+  background-image: url(../../img/pexels-photo-326279.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100vh;
+}
+
+#pantallaInicial{
+  transition: all 5s ease;
+
+}
+.container-fluid{
+  width: 100%;
+}
+.row{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Pantalla de inicio */
+#title1{
+  color: #FE2E2E;
+  text-align: center;
+  margin-top: 15% ;
+  font-size: 5em;
+  font-family: 'Leckerli One', cursive;
+}
+#loading{
+  text-align: center;
+  width: 12em;
+}
+#loading2{
+  width: 0.8em;
+  padding-bottom: 0.3em;
+}
+#contLogo{
+  text-align: center;
+}
+
+
+@media (max-width: 575px) {
+  #title1{
+    font-size: 3.5em;
+    margin-top:40%;
+    text-align: center;
+  }
+}
+
+/*Pantalla principal de app*/
+#pantallaApp{
+  display: none;
+
+}
+
+/*Titulo de pagina*/
+#title2{
+  color: #FE2E2E;
+  text-align: center;
+  font-family: 'Leckerli One', cursive;
+  font-size: 3.5em;
+  margin-top: 1em;
+}
+
+#subtitle{
+  color:sandybrown;
+  text-align: center;
+  margin: 1em;
+  font-weight: 300;
+}
+
+/*Input de busqueda*/
+
+#map{
+  width:66vw; 
+  height: 30vw;
+  margin-top:0.8em;
+  border-radius: 10px;
+}
+
+.col-centrada{
+  float: none;
+  margin: 0 auto;
+}
+
+/*Input de busqueda en mapa*/
+
+.fa-search{
+  color: sandybrown;
+  margin-left: 2px;
+}
+
+/*input de busqueda por nombre*/
+
+.input-group{
+  width: 60%;
+  margin-left: 20%;
+}
+#btnSearchMaps{
+  background-color: #FE2E2E;
+  border: 1px solid #FE2E2E;
+  height: 2.5em;
+}
+
+#title3{
+  text-align: center;
+  margin: 1em;
+  color: sandybrown;
+  font-weight: 300;
+  font-size: 1.8em;
+}
+#btnSearch{
+  background-color: #FE2E2E;
+  border: 1px solid #FE2E2E;
+}
+.modal-header{
+  background-color: #FE2E2E; 
+  color: white;
+}
+#exampleModalLabel{
+  text-align: center;
+}
+
+#showRestaurantes{
+  background-color: #fff;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: -0.8em;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#parrafoNombres{
+  margin: 0.8em;
+  cursor: pointer;
+  font-weight: 500;
+}
+@media (max-width: 575px) {
+  .input-group{
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+#title4{
+  text-align: center;
+  margin-bottom: 2em;
+  margin-top: -1em;
+  color: white;
+  font-weight: 200;
+  font-size: 1em;
+}
+.fa-phone{
+color: white;
+}
+#btnDang{
+  background-color: #FE2E2E;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#btnClose:hover{
+color: white;
+background-color: #FE2E2E;
+}
+
+#title5{
+  color: #FE2E2E;
+  text-align: center;
+  margin-top: 15% ;
+  font-size: 1em;
+  font-family: 'Leckerli One', cursive;
+}
+
+#loading3{
+  width: 1em;
+  padding-bottom: 0.3em;
+}

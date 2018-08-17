@@ -117,6 +117,8 @@
 .modal-header{
   background-color: #FE2E2E; 
   color: white;
+}
+#exampleModalLabel{
   text-align: center;
 }
 
