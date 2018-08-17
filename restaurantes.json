@@ -55,13 +55,13 @@
 		"longitud" : "-70.59766580000002"
 	},
 	{
-		"name": "Trattoria Rita",
+		"name": "Sole mio",
 		"category": "Italiana",
-		"address": "Avenida Presidente Kennedy 5413, Santiago",
+		"address": "Moneda 1818, Santiago 8340538, Chile",
 		"city": "Santiago",
 		"region": "Metropolitana",
-		"phone" : "+56 2 2656 7014",
-		"urlPhoto": "http://www.rita.cl/wp-content/uploads/2016/02/Logo-Trattoria-Rita.png",
+		"phone" : "+6882891",
+		"urlPhoto": "https://media-cdn.tripadvisor.com/media/photo-s/08/c8/31/05/photo1jpg.jpg",
 		"latitud" : "-33.4021934",
 		"longitud" : "-70.5782494"
 	},
@@ -241,13 +241,13 @@
 		"longitud" : "-70.62545399999999"
 	},
 	{
-		"name": "La Hacienda Gaucha",
+		"name": "Cuerovaca",
 		"category": "Churrasquería",
-		"address": "Avenida Vicuña Mackenna 35, Santiago",
+		"address": "Paseo Peatonal El Mañio 1659, Vitacura",
 		"city": "Santiago",
 		"region": "Metropolitana",
-		"phone" : "+56 2 2665 6038",
-		"urlPhoto": "http://www.lahaciendagaucha.cl/logoinicio.jpg",
+		"phone" : "+56 2 2206 3911",
+		"urlPhoto": "http://fudis.cl/wp-content/uploads/2016/11/Cuerovaca.jpg",
 		"latitud" : "-33.438547",
 		"longitud" : "-70.63508389999998"
 	},
@@ -296,24 +296,24 @@
 		"longitud" : "-70.59860789999999"
 	},
 	{
-		"name": "Naoki",
+		"name": "Goemon",
 		"category": "Sushi",
-		"address": "Avenida Vitacura 3875, Santiago",
+		"address": "Avenida Manuel Montt 38, Santiago, Chile",
 		"city": "Santiago",
 		"region": "Metropolitana",
-		"phone" : "+56 2 2207 529",
-		"urlPhoto": "https://media-cdn.tripadvisor.com/media/photo-s/10/c7/86/66/naoki-sushi-bar-exotic.jpg",
+		"phone" : "+56 2 2235 1714",
+		"urlPhoto": "http://www.goemon.cl/images/logogoemon.png",
 		"latitud" : "-33.40055359999999",
 		"longitud" : "-70.5922726"
 	},
 	{
-		"name": "Matsuri",
+		"name": "Etniko",
 		"category": "Sushi",
-		"address": "Avenida Presidente Kennedy # 4601",
+		"address": "Calle Constitucion 172, Santiago 8320000, Chile",
 		"city": "Santiago",
 		"region": "Metropolitana",
 		"phone" : "+56 2 2950 3188",
-		"urlPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz4PnHZnYpoWaiTjDBsiDzekeL6YSJvWzbY42lUsuBusLaqt0S",
+		"urlPhoto": "http://www.etniko.cl/images/secciones/restaurant-1.jpg",
 		"latitud" : "-33.4044249",
 		"longitud" : "-70.58583720000001"
 	}
