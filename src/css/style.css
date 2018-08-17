@@ -14,6 +14,9 @@
   padding: 0;
   width: 100%;
 }
+#pantallaInicial{
+  transition: all 1s ease;
+}
 /* Pantalla de inicio */
 #title1{
   color: #FE2E2E;
@@ -46,6 +49,7 @@
 /*Pantalla principal de app*/
 #pantallaApp{
   display: none;
+  transition: all 1s ease;
   
 }
 
