@@ -1,5 +1,9 @@
 #body{
   background-color: #242322;
+  background-image: url(../../src/img/pexels-photo-326279.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100vh;
 }
 
 .container-fluid{
