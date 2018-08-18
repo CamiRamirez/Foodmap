@@ -141,6 +141,12 @@
     margin-left: 10%;
   }
 }
+@media (max-width: 575px) {
+  #showRestaurantes{
+    width: 80%;
+    margin-left: 10%;
+  }
+}
 
 #title4{
   text-align: center;
